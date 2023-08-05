@@ -123,7 +123,10 @@ object ClassHelper {
      *
      * If the class DOES NOT directly have the interface it will fail.
      */
-    fun hasInterface(requiredClass: Class<*>, clazz: Class<*>): Boolean {
+    fun hasInterface(requiredClass: Class<*>, clazz: Class<*>?): Boolean {
+        if (clazz == null) {
+            return false
+        }
         if (requiredClass == clazz) {
             return true
         }
