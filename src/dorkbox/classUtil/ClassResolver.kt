@@ -16,6 +16,11 @@
 package dorkbox.classUtil
 
 object ClassResolver {
+    /**
+     * Gets the version number.
+     */
+    const val version = ClassHelper.version
+
     private const val CALL_CONTEXT_OFFSET = 3 // may need to change if this class is redesigned
     private val CALLER_RESOLVER: CallerResolver
 

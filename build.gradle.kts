@@ -35,7 +35,7 @@ object Extras {
     // set for the project
     const val description = "Class helpers and utilities for managing class hierarchies."
     const val group = "com.dorkbox"
-    const val version = "1.0"
+    const val version = "1.1"
 
     // set as project.ext
     const val name = "ClassUtils"

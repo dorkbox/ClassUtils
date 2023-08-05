@@ -127,6 +127,11 @@ class ClassHierarchy(loadFactor: Float) {
     }
 
     companion object {
+        /**
+         * Gets the version number.
+         */
+        const val version = ClassHelper.version
+
         // Recommended for best performance while adhering to the "single writer principle". Must be static-final
         private val arrayREF = AtomicReferenceFieldUpdater.newUpdater(
             ClassHierarchy::class.java, IdentityMap::class.java, "arrayCache"

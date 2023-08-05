@@ -22,6 +22,17 @@ import java.util.*
 
 object ClassHelper {
     /**
+     * Gets the version number.
+     */
+    const val version = "1.1"
+
+    init {
+        // Add this project to the updates system, which verifies this class + UUID + version information
+        dorkbox.updates.Updates.add(ClassHelper::class.java, "2cd6b7f69d2a4fdb82285cbde74349a6", version)
+    }
+
+
+    /**
      * Retrieves the generic type parameter for the PARENT (super) class of the specified class or lambda expression.
      *
      * Because of how type erasure works in java, this will work on lambda expressions and ONLY parent/super classes.

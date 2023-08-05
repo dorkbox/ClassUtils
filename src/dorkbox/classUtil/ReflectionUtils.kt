@@ -27,6 +27,11 @@ import java.lang.reflect.Method
  * Date: 2/2/15
  */
 object ReflectionUtils {
+    /**
+     * Gets the version number.
+     */
+    const val version = ClassHelper.version
+
     @Suppress("UNCHECKED_CAST")
     private val EMPTY_METHODS = arrayOfNulls<Method>(0) as Array<Method>
 
