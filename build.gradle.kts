@@ -77,7 +77,7 @@ tasks.jar.get().apply {
 }
 
 dependencies {
-    api("com.dorkbox:Collections:2.2")
+    api("com.dorkbox:Collections:2.3")
     api("com.dorkbox:Updates:1.1")
 
     api("net.jodah:typetools:0.6.3")
