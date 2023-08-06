@@ -24,7 +24,7 @@ object ClassHelper {
     /**
      * Gets the version number.
      */
-    const val version = "1.1"
+    const val version = "1.2"
 
     init {
         // Add this project to the updates system, which verifies this class + UUID + version information
