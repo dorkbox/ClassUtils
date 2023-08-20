@@ -8,25 +8,25 @@ Class helpers and utilities for managing class hierarchies.
 
 Maven Info
 ---------
-````
+```
 <dependencies>
     ...
     <dependency>
       <groupId>com.dorkbox</groupId>
       <artifactId>ClassUtils</artifactId>
-      <version>1.0</version>
+      <version>1.3</version>
     </dependency>
 </dependencies>
-````
+```
 
 Gradle Info
 ---------
-````
+```
 dependencies {
     ...
-    compile "com.dorkbox:ClassUtils:1.0"
+    compile "com.dorkbox:ClassUtils:1.3"
 }
-````
+```
 
 
 License
