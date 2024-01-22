@@ -1,14 +1,14 @@
  - ClassUtils - Class helpers and utilities for managing class hierarchies.
    [The Apache Software License, Version 2.0]
    https://git.dorkbox.com/dorkbox/ClassUtils
-   Copyright 2023
+   Copyright 2024
      Dorkbox LLC
 
    Extra license information
      - TypeTools - A simple, zero-dependency library for working with types. Supports Java 1.6+ and Android.
        [The Apache Software License, Version 2.0]
        https://github.com/jhalterman/typetools
-       Copyright 2023
+       Copyright 2024
          Jonathan Halterman and friends
 
      - Kotlin - 

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 dorkbox, llc
+ * Copyright 2024 dorkbox, llc
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,7 +26,7 @@ plugins {
     id("com.dorkbox.GradleUtils") version "3.18"
     id("com.dorkbox.Licensing") version "2.28"
     id("com.dorkbox.VersionUpdate") version "2.8"
-    id("com.dorkbox.GradlePublish") version "1.20"
+    id("com.dorkbox.GradlePublish") version "1.22"
 
     kotlin("jvm") version "1.9.0"
 }
@@ -35,7 +35,7 @@ object Extras {
     // set for the project
     const val description = "Class helpers and utilities for managing class hierarchies."
     const val group = "com.dorkbox"
-    const val version = "1.3"
+    const val version = "1.4"
 
     // set as project.ext
     const val name = "ClassUtils"
@@ -77,7 +77,7 @@ tasks.jar.get().apply {
 }
 
 dependencies {
-    api("com.dorkbox:Collections:2.4")
+    api("com.dorkbox:Collections:2.8")
     api("com.dorkbox:Updates:1.1")
 
     api("net.jodah:typetools:0.6.3")
