@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 dorkbox, llc
+ * Copyright 2024 dorkbox, llc
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -62,7 +62,7 @@ object ClassHelper {
             // check to see if we have what we are looking for on our CURRENT class
             val superClassGeneric = loopClassCheck.getGenericSuperclass()
             classes = TypeResolver.resolveRawArguments(superClassGeneric, loopClassCheck)
-            if (classes.size > genericParameterToGet) {
+            if (classes != null && classes.size > genericParameterToGet) {
                 val aClass = classes[genericParameterToGet]
                 if (aClass != TypeResolver.Unknown::class.java) {
                     return classes[genericParameterToGet]
@@ -80,7 +80,7 @@ object ClassHelper {
             val genericInterfaces = loopClassCheck.getGenericInterfaces()
             for (genericInterface in genericInterfaces) {
                 classes = TypeResolver.resolveRawArguments(genericInterface, loopClassCheck)
-                if (classes.size > genericParameterToGet) {
+                if (classes != null && classes.size > genericParameterToGet) {
                     val aClass = classes[genericParameterToGet]
                     if (aClass != TypeResolver.Unknown::class.java) {
                         return aClass
